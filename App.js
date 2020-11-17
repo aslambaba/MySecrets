@@ -4,8 +4,9 @@ import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Home from './screens/home';
-import Media from './screens/media';
-import Messeges from './screens/messeges';
+import PrivateChat from './screens/privatechat';
+import Myfiles from './screens/myfiles';
+import MyPasswords from './screens/mypasswords';
 
 const Stack = createStackNavigator();
 
@@ -14,8 +15,9 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Media" component={Media} />
-        <Stack.Screen name="Messeges" component={Messeges} />
+        <Stack.Screen name="PrivateChat" component={PrivateChat} />
+        <Stack.Screen name="MyFiles" component={Myfiles} />
+        <Stack.Screen name="MyPasswords" component={MyPasswords} />
       </Stack.Navigator>
     </NavigationContainer>
   );
